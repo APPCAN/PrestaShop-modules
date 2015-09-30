@@ -63,6 +63,8 @@
 		<input type="hidden" name="cancel_return" value="{$paypal_usa_cancel_url|escape:'htmlall':'UTF-8'}" />
 		<input type="hidden" name="no_shipping" value="1" />
 		<input type="hidden" name="bn" value="PrestashopUS_Cart" />
-		<input id="paypal-standard-btn" type="image" name="submit" src="https://www.paypalobjects.com/{if $lang_iso == 'en'}en_US{else}{if $lang_iso == 'fr'}fr_CA{else}{if $lang_iso == 'es'}es_ES{else}en_US{/if}{/if}{/if}/i/bnr/horizontal_solution_PPeCheck.gif" alt="" style="vertical-align: middle; margin-right: 10px;" /> {l s='Pay with PayPal' mod='paypalusa'}
+		<input id="paypal-standard-btn" type="image" name="submit" src="https://www.paypalobjects.com/{if $lang_iso == 'en'}en_US{else}{if $lang_iso == 'fr'}fr_CA{else}{if $lang_iso == 'es'}es_ES{else}en_US{/if}{/if}{/if}/i/bnr/horizontal_solution_PPeCheck.gif" alt="" style="vertical-align: middle; margin-right: 10px;" /> 
+		<button type="submit" class="button btn btn-default standard-checkout button-medium" style="float:right"> <span> {l s='Pay with PayPal' mod='paypalusa'} <i class="icon-chevron-right right"></i> </span> </button>
+
 	</p>
 </form>
